@@ -1,4 +1,4 @@
-# Proyecto 2 – Clasificador de tipo de IA
+# Proyecto 1 – Clasificador de tipo de IA
 
 Este proyecto entrena un modelo para predecir el tipo de inteligencia artificial en base a una descripción de su uso.
 
