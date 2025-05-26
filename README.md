@@ -1,32 +1,33 @@
-# Proyecto 1 – Clasificador de tipo de IA
+# IA Type Classifier – Machine Learning Project
 
-Este proyecto entrena un modelo para predecir el tipo de inteligencia artificial en base a una descripción de su uso.
+This project implements a simple text classifier that predicts the **type of artificial intelligence** being described in a given use case.
 
-## Tipos que reconoce:
-- IA débil
-- IA general
-- IA por refuerzo
-- IA supervisada
-- IA no supervisada
+The model is trained using a small, custom dataset with labeled sentences and uses `scikit-learn`'s `MultinomialNB` algorithm to classify the input.
 
-## Cómo usarlo
+## 🧠 What it predicts:
+The classifier can recognize and label the following types of AI:
 
-1. Instala scikit-learn:
-```
+- Narrow AI (IA débil)
+- General AI (IA general)
+- Supervised learning (Aprendizaje supervisado)
+- Unsupervised learning (Aprendizaje no supervisado)
+- Reinforcement learning (Aprendizaje por refuerzo)
+
+## 🧪 How it works:
+- The input is a short description of an AI use case (e.g. "A robot learns by trial and error").
+- The sentence is vectorized using `CountVectorizer`.
+- The trained model predicts the most likely AI type.
+
+## 💻 Technologies:
+- Python
+- Scikit-learn
+- CountVectorizer
+- Naive Bayes Classifier
+
+## 🚀 How to run:
+
+1. Clone the repository or download the files.
+2. Install the required library:
+```bash
 pip install scikit-learn
-```
 
-2. Ejecuta el script:
-```
-python clasificador_tipo_ia.py
-```
-
-3. Escribe una frase como:
-```
-Una IA que aprende sin etiquetas, agrupando datos similares
-```
-
-Y verás la predicción.
-
-## Autor
-Ferran Calvo Eman
